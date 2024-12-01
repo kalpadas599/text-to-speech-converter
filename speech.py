@@ -2,11 +2,11 @@
 import pyttsx3
 engine = pyttsx3.init()
 answer = input("what you want to convert into speech:")
-#engine.setProperty("rate", 150)
+engine.setProperty("rate", 150)
 engine.say(answer)
 engine.runAndWait()
 
-""" #speech to text converter
+#speech to text converter
 import speech_recognition as sr
 r = sr.Recognizer()
 with sr.Microphone() as source:
@@ -17,5 +17,5 @@ with sr.Microphone() as source:
         print("you said : {}".format(text))
     except:
         print("sorry could not recognize your voice")
-   """  
+    
 
